@@ -4,7 +4,7 @@ using namespace std;
 class Stack
 {
 private:
-    int top = -1;
+    int top;
     int arr[100];
 public:
     
@@ -36,7 +36,12 @@ public:
         top--;
     }
 
+    Stack() { 
+        top = -1; 
+    }
+
 };
+
 
 int main () {
     Stack st;
@@ -45,7 +50,10 @@ int main () {
     cout<<"top = "<<st.peek()<<endl;
     st.pop();
     cout<<"is stack empty? = "<<st.isEmpty()<<endl;
-    st.pop();
+    st.pop(); 
+    for(int i = 0; i <=100; i++) {
+        st.push(i);
+    }
     return 0;
 }
 
