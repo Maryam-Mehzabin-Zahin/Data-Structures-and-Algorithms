@@ -50,9 +50,14 @@ int main () {
     Queue q;
     q.enqueue(1);
     q.enqueue(2);
+
     cout<<q.dequeue();
+    cout<<q.dequeue();
+    cout<<q.dequeue();
+    cout<<q.dequeue();
+
     cout<<q.isEmpty();
-    cout<<q.size();
+    cout<<"size = " <<q.size()<<endl;
     cout<<q.peek();
     return 0;
 }
